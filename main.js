@@ -1,6 +1,9 @@
 // declaring the p1 variable to the <p> id
 let p1 = document.getElementById("p1");
 
+// declaring the p2 variable to the <p> id
+let p2 = document.getElementById("p2");
+
 //adding an event listener which takes two parameters; an event and function
 p1.addEventListener("dblclick", function(ev) {
 
@@ -13,8 +16,19 @@ p1.addEventListener("dblclick", function(ev) {
 	console.log(ev.type);
 });
 
+p2.addEventListener("mouseover", function(ev) {
+
+//setting style for p2
+
+	p2.style.fontFamily="sans-serif";
+
+	console.log(ev.target);
+	console.log("hello");
+	console.log(ev.type);
+});
+
 // declaring the p1 variable to the <p> id
-let p2 = document.getElementById("p2");
+
 
 let text = document.getElementById("text");
 
