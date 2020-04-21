@@ -28,8 +28,8 @@ text.addEventListener("keypress", function(ev) {
 
 
 function myfunction() {
-	let vent="sell";
-	var p3 = document.getElementById("p3").innerHTML;
-	var txt = p3.replace(vent,"buy");
-	document.getElementById("p3").innerHTML = txt;
+
+	var p3 = document.getElementById("p3").innerHTML; //declaring variable p3 to the content <p> of id=p3
+	var txt = p3.replace("sell","buy"); //setting the variable "txt" as a place holder for the changes made to p3
+	document.getElementById("p3").innerHTML = txt; //displaying the change in the variable txt into the content of the <p> of id=p3
 }
